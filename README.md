@@ -1,10 +1,4 @@
-# OBS Studio: Understanding how to use it, to create and edit videos
-@Navbar with active tabs css disappears within a second.
-
-@delete appointment by ID (admin vs patient 48 hrs due)
-@remove components folder and place pagination inside services folder
-@
-@REMEMBER : Google Chrome and Firefox supports EcmaScript6 but IE11 does not. It supports only ES5. So using => will give Script Error in
+@IMPORTANT : Google Chrome and Firefox supports EcmaScript6 but IE11 does not. It supports only ES5. So using => will give Script Error in
 Internet Explorer console. There is not much help regarding this error on online community because IE may soon become obsolete.
 
 # Starting the Application
@@ -113,20 +107,18 @@ to '/login' due to expired refresh_token will be affected.
 # Navbar Active Item -
 An 'activeClassName' attribute of <NavLink> will assign its <a> tag a css class of "active" when the router notices that the user is accessing the path of the Link. Even if we replace <a> with <NavLink>, in .css we assign properties to 'a' as if <Navbar> is equivalent to <a>. This helps us to create active navbar item unique and easy to know which page the user is at.
 
-@Use window.location.reload(false); inside .then(response=>{}) to update the data when you fetch data from database again.
+#IMPORTANT INFORMATION -
+Use window.location.reload(false); inside .then(response=>{}) to update the data when you fetch data from database again.
 When you delete appointment from '/admin_view_appointments' you must refresh the page to update the data. If you reload the
 page after .then(response=>{}) and the access_token has expired then reload can prevent the retry of failed request.
 window.location.reload(false); statement is executed before the retry failed request. Placing the reload statement inside
 .then(response=>{}) will ensure that reload will occurs only when original request is successful.
 
 
-@At least one degree for doctor must be selected or else that doctor will not show in Admin.ViewDoctors
-(Solved by creating 'Required Field' error message if no degrees selected while creating or updating doctor.)
-
-@LogoutModal is not displaying on top of Patient.BookAppointment.
+LogoutModal did not display on top of Patient.BookAppointment.
 (This is due to stacking order of the elements. Solved by placing <Navbar/> element after the Router Components in 'App.js'.
 Since, <Navbar/> is placed after Router Components in 'App.js', Navbar's stacking order is higher than Router Components and therefore, LogoutModal will display above the elements of Patient.BookAppointment component. Also, <Navbar/> has css 'position: fixed', which allows
 it to stay fixed on top of the page).
 
-@Subscribe.js - getDerivedStateFromProps() should replace componentWillReceiveProps() else warning message appears in console.
+getDerivedStateFromProps() should replace componentWillReceiveProps() else warning message appears in console.
 However, setTimeout() method cannot be used in getDerivedStateFromProps. So, suppress the warning message with 'UNSAFE_' prefix.
