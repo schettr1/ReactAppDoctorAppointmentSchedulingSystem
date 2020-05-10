@@ -1,0 +1,40 @@
+.parent {
+   display: grid;
+   grid-template-columns: 1fr 4fr; /* fraction*/
+   width: 65%;
+   margin-left: 160px;
+ }
+ .left-child {
+   /*margin: 5px 5px;*/
+ }
+ .right-child {
+   /*margin: 5px 5px;*/
+ }
+
+
+ /* RegisterNavbar.js */
+ .navbar {
+   margin-bottom: 100px;      /* leave this space below the navbar so each page content does not get hidden behind the navbar */
+ }
+
+ .navbarHeader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #333333;
+   height: 56px;
+   margin-top: 20px;         /* to display medical-logo above the navbar */
+ }
+
+ .navbar_nav {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   padding-left: 0;
+ }
+
+ .navbar_logos {
+   color: #4169E1;
+   text-decoration: none!important;
+ }

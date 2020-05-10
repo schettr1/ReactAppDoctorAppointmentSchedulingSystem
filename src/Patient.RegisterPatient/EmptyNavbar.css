@@ -1,0 +1,20 @@
+.navbar_ {
+  position: fixed;          /* creates sticky header or navbar */
+  top: 0;
+  width: 100%;
+  background: #333333;      /* graphite color background */
+  height: 56px;
+  /*margin-top: 20px;         /* leave space for logo to extend above */
+}
+
+.navbar_content_ {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 0;
+}
+
+.navbar_logo_name_ {
+  color: #4169E1;
+  text-decoration: none!important;
+}

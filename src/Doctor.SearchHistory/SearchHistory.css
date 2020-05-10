@@ -1,0 +1,31 @@
+/* MyPatient.js */
+.float-left-div {
+  float: left;
+  width: 40%;
+}
+.float-right-div {
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.clear-right {
+  clear: left;
+}
+
+
+
+
+/* ListHistory.js */
+.table {
+  border: 1.5px solid lightgray;
+  width: 100%;
+}
+thead tr {
+  background-color: black;
+  color: white;
+}
+.time {
+  background-color: #4682B4;
+  color: white;
+}

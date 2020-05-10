@@ -1,0 +1,51 @@
+._navbar {
+  position: fixed;          /* creates sticky header or navbar */
+  top: 0;
+  width: 100%;
+  background: #333333;      /* graphite color background */
+  height: 56px;
+  /*margin-top: 20px;         /* leave space for logo to extend above */
+}
+
+._navbar_content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 0;
+}
+
+._navbar_logo_name {
+  color: #4169E1;
+  text-decoration: none!important;
+}
+
+._spacer {
+  flex: 1;        /* create maximum space between the logo and the nav-items */
+}
+
+._navbar-items ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+._navbar-items li {
+}
+
+/* text-decoration : none removes the underscore below the href text */
+._navbar-items li a {
+  color: white;
+  text-decoration: none !important;
+  padding: 30px;
+}
+
+._navbar-items li a:hover {
+  color: #111111;
+}
+
+/* even though 'a' tag is replaced by 'NavLink', in css assume that there is 'a' tag instead of 'NavLink' tag */
+._navbar-items li a.active {
+  color: white;
+  background-color: black;
+  padding: 15px;
+}

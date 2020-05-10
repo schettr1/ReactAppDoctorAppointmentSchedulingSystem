@@ -1,0 +1,29 @@
+.parent {
+   display: grid;
+   grid-template-columns: 1fr 4fr; /* fraction*/
+   width: 65%;
+   margin-left: 160px;
+ }
+ .left-child {
+   /*margin: 5px 5px;*/
+ }
+ .right-child {
+   /*margin: 5px 5px;*/
+ }
+
+.checkBoxStyle {
+  width: 15px;
+  height: 15px;
+  margin-right: 35px;
+  margin-left: 2px;
+}
+
+.leftSide {
+  float: left;
+  width: 47%;
+}
+
+.rightSide {
+  float: right;
+  width: 47%;
+}

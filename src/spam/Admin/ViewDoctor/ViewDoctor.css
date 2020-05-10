@@ -1,0 +1,33 @@
+.searchPanel {
+
+}
+
+.floatRight {
+  text-align: right;
+}
+
+.divStyle {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBox {
+  padding: 5px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontalDivider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.starLogo {
+  width: 5px;
+  height: 5px;
+}

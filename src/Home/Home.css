@@ -1,0 +1,16 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* fraction*/
+}
+
+.left-div {
+  margin: 15px 0;
+}
+.right-div {
+  margin: 15px 35px;
+}
+
+.buttonStyle {
+  text-align: center;
+  margin: 10px 10px;
+}

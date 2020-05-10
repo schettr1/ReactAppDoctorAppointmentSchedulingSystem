@@ -1,0 +1,50 @@
+/******** BookAppointment.js**********/
+
+.container {
+  text-align: center;
+}
+.block {
+  display: inline-block;
+  width: 400px;
+}
+
+.timetable {
+  margin-top: 30px;
+  margin-left: -30px;
+}
+
+
+
+
+
+
+
+/******** TimePicker.js**********/
+
+.rowClicked {                /* property of button that user selects */
+  background-color: green;
+  cursor: pointer;
+}
+
+.rowNotClicked {                /* property of button that is unselected or available */
+  background-color: #bfbfbf;
+  cursor: pointer;
+}
+
+.isBooked {                 /* property of buttons which were not available for selection */
+  background-color: #CD5C5C;
+}
+
+.buttonStyle {              /* properties of all colored buttons - gray, green or red */
+  border-radius: 2px;       /* increase the ovalness of rectangle */
+  border: none;             /* make the border line invisible so it enrichess the background-color */
+  padding: 10px 12px;       /* space between inner text and outer border of buton */
+  margin: 2px 1px;         /* left and above space of current div/button */
+  color: white;
+}
+
+.bookButton {
+  margin-left: 50px;         /* above space and left space of current div/button */
+  margin-top: 30px;
+  width: 120px;
+}

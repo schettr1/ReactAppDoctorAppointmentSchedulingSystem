@@ -1,0 +1,27 @@
+.parent {
+   display: grid;
+   grid-template-columns: 1fr 4fr; /* fraction*/
+   width: 65%;
+   margin-left: 160px;
+ }
+ .left-child {
+   /*margin: 5px 5px;*/
+ }
+ .right-child {
+   /*margin: 5px 5px;*/
+ }
+  .float-left {
+    float: left;
+    width: 82%;
+  }
+  .float-right {
+
+  }
+
+.text-area1 {
+  min-height: 100px;
+}
+
+.text-area2 {
+  min-height: 50px;
+}

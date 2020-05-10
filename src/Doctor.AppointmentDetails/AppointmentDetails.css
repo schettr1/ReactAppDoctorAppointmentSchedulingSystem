@@ -1,0 +1,33 @@
+.parent {
+   display: grid;
+   grid-template-columns: 1fr 4fr; /* fraction*/
+   width: 65%;
+   margin-left: 160px;
+ }
+ .__left-child {
+   /*margin: 5px 5px;*/
+ }
+ .__right-child {
+   /*margin: 5px 5px;*/
+ }
+  .__float-left {
+    float: left;
+    width: 82%;
+  }
+  .__float-right {
+  }
+
+.text-area1 {
+  min-height: 100px;
+}
+
+.text-area2 {
+  min-height: 50px;
+}
+
+.warningMessage {
+  background-color: #CD5C5C;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}

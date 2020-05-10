@@ -1,0 +1,23 @@
+.parent {
+   display: grid;
+   grid-template-columns: 1fr 4fr; /* fraction*/
+   width: 65%;
+   margin-left: 160px;
+ }
+ .left-child {
+   /*margin: 5px 5px;*/
+ }
+ .right-child {
+   /*margin: 5px 5px;*/
+ }
+
+
+ ._successMsg {
+   background-color: #3CB371;      /* green color */
+   color: white;
+   padding: 15px;
+   border-radius: 8px;
+   text-align: center;
+   position: fixed;    /* fixed position and top 75px will make that the message displays at the same height from top of the page even if we scroll the page down  */
+   top: 75px; 
+ }

@@ -1,0 +1,9 @@
+._successMsg {
+  background-color: #3CB371;      /* green color */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  position: fixed;
+  top: 75px;
+  text-align: center;
+}

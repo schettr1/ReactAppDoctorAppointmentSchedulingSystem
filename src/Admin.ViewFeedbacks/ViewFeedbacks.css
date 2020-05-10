@@ -1,0 +1,80 @@
+.searchPanel {
+
+}
+
+.floatRight {
+  text-align: right;
+}
+
+.divStyle {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBox {
+  padding: 5px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontalDivider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+td.first {
+  width: 5%;
+}
+
+td.middle {
+  width: 25%;
+}
+
+td.last {
+  /* width: leftover */
+}
+
+.selectBox {
+  margin-bottom: 20px;
+}
+.float-right {
+  float: right;
+  display: flex;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.space {
+  width: 50%;
+}
+
+
+
+/******** Pagination *********/
+
+.link-button {
+  transition: background-color .3s;
+  background-color: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 8px 16px;
+  color: black;
+}
+
+.active {
+  background-color: #4682B4;    /* Steelblue */
+  color: white;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  background-color: #ddd;
+}

@@ -1,0 +1,19 @@
+/* Login.js */
+.wrapper {
+   margin-top: 150px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   text-align: center;
+}
+
+._button {
+  margin-top: 15px;
+}
+
+
+.loginForm {
+  min-width: 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}

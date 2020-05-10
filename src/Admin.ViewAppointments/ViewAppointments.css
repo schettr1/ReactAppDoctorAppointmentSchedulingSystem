@@ -1,0 +1,20 @@
+.leftFloat {
+  float: left;
+  width: 40%;
+}
+
+.rightFloat {
+  float: right;
+}
+
+.modalContent {
+  clear: both;
+}
+
+.left-child {
+  margin-top: 5px;
+}
+
+.right-child {
+  margin-right: 15px;
+}

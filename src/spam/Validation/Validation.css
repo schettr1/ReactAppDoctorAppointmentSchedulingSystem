@@ -1,0 +1,39 @@
+.validation_body {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.Validation {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+form {
+
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.form-field {
+  height: 35px;
+  min-width: 265px;
+  font-size: 22px;
+}
+
+.error-msg {
+  color: red;
+  margin: 5px 0;
+  font-weight: bold;
+}

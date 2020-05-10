@@ -1,0 +1,8 @@
+._content {
+  margin-top: 100px;    /* leave 100px space between header and beginning of content */
+  margin-bottom: 75px;    /* leave 75px space between end of content and footer */
+}
+
+._header, ._footer {
+  
+}

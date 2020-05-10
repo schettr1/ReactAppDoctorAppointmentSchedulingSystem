@@ -1,0 +1,25 @@
+.floatRightSide {
+  float: right;
+}
+.leftChild {
+  float: left;
+}
+.rightChild {
+  float: right;
+}
+
+
+
+/* List Appointment.js */
+.table {
+  border: 1.5px solid lightgray;
+  width: 100%;
+}
+thead tr {
+  background-color: black;
+  color: white;
+}
+.time {
+  background-color: #4682B4;
+  color: white;
+}
