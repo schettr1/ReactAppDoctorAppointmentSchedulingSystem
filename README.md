@@ -1,6 +1,3 @@
-@IMPORTANT : Google Chrome and Firefox supports EcmaScript6 but IE11 does not. It supports only ES5. So using => will give Script Error in
-Internet Explorer console. There is not much help regarding this error on online community because IE may soon become obsolete.
-
 # Starting the Application
 Start Web Server (spring-boot application). You can access resources at http://localhost:8080/reactjs_restful/#pathname
 Start React application from command line using "npm start". It will run on http://localhost:3000/
@@ -108,6 +105,9 @@ to '/login' due to expired refresh_token will be affected.
 An 'activeClassName' attribute of <NavLink> will assign its <a> tag a css class of "active" when the router notices that the user is accessing the path of the Link. Even if we replace <a> with <NavLink>, in .css we assign properties to 'a' as if <Navbar> is equivalent to <a>. This helps us to create active navbar item unique and easy to know which page the user is at.
 
 #IMPORTANT INFORMATION -
+Google Chrome and Firefox supports EcmaScript6 but IE11 does not. It supports only ES5. So using => will give Script Error in
+Internet Explorer console. There is not much help regarding this error on online community because IE may soon become obsolete.
+
 Use window.location.reload(false); inside .then(response=>{}) to update the data when you fetch data from database again.
 When you delete appointment from '/admin_view_appointments' you must refresh the page to update the data. If you reload the
 page after .then(response=>{}) and the access_token has expired then reload can prevent the retry of failed request.
