@@ -23,6 +23,7 @@ class AppointmentDetails extends Component {
       },
       isInvalidAppID: false,
       errorMsg: '',
+      successMsg: '',              // display message such as 'Saved' or 'Updated'
     };
     this.onChangeAppointmentId = this.onChangeAppointmentId.bind(this);
     this.onChangeReason = this.onChangeReason.bind(this);
@@ -62,6 +63,23 @@ class AppointmentDetails extends Component {
     }
 
   }
+
+
+
+  // update in this.state.successMsg will be detected
+  componentDidUpdate(_, prevState){
+    if (this.state.successMsg && !prevState.successMsg) {
+      setTimeout(() => {
+        this.setState({
+          successMsg:''
+        },()=>{
+          window.location.reload(false);    // update the page
+        })
+      }, 2000);       // setState of successMsg:'' after 2 seconds of having state.successMsg:'Thankyou for the feedabck!'
+    }
+  }
+
+
 
   render() {
     return(
@@ -197,6 +215,18 @@ class AppointmentDetails extends Component {
                   )}
               </div>
             </form>
+
+            {/* style={position:'fixed' & top:'75px'}
+             *  Even if you scroll the page all the way down or shrink the page height, message will display at the same position.
+             *  To position the stacking order of elements place this code below form elements
+            */}
+            {this.state.successMsg ?
+              <div className='container _successMsg_'>
+                  {this.state.successMsg}
+              </div>
+              : null
+            }
+
           </div>
         </div>
     );
@@ -224,11 +254,31 @@ class AppointmentDetails extends Component {
 
     console.log(_appointmentdetail);
     // update appointmentdetails for status 'COMPLETED' and 'RECEIVED' only, appointmentdetails is created when appointment is created.
-    if (this.state.appointmentdetail.appointment_status === 'COMPLETED' || this.state.appointmentdetail.appointment_status === 'RECEIVED') {
+    if (this.state.appointmentdetail.appointment_status === 'RECEIVED') {
       axios.post('/doctor/update_appointmentdetail', _appointmentdetail)
             .then(response => {
               console.log(response.data);
-              window.location.reload(false);      // refresh the page
+              // display success message
+              this.setState({
+                successMsg: 'Saved Successfully!!'
+              },()=>{
+                console.log('this.state.successMsg', this.state.successMsg);
+              })
+            })
+            .catch(function (error) {
+              console.log(error);
+            })
+    }
+    else if (this.state.appointmentdetail.appointment_status === 'COMPLETED') {
+      axios.post('/doctor/update_appointmentdetail', _appointmentdetail)
+            .then(response => {
+              console.log(response.data);
+              // display success message
+              this.setState({
+                successMsg: 'Updated Successfully!!'
+              },()=>{
+                console.log('this.state.successMsg', this.state.successMsg);
+              })
             })
             .catch(function (error) {
               console.log(error);

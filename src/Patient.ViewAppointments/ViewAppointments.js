@@ -173,7 +173,7 @@ class ViewAppointments extends Component {
                                 show={this.state.isModalRevokedOpen}
                                 onClose={this.closeModalRevoked}>
                                 <br/>
-                                <div style={{color: 'red'}}>Appointments that are scheduled in less than 48 hrs cannot be canceled online. Please call the clinic</div>
+                                <div style={{color: 'red'}}>Appointments that are due in less than 48 hrs cannot be canceled online. Please call the clinic</div>
                             </ModalRevoked>
                         </td>
                       </tr>
